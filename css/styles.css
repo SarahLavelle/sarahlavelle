@@ -1,0 +1,45 @@
+.navbar {
+    background-color: #34B5C9;
+}
+
+.navbar-brand img {
+    max-height: 100%;
+}
+
+.navbar-default .navbar-nav li a {
+    color: white;
+}
+
+.fa-brands {
+    padding: 7px;
+    font-size: 30px;
+    width: 50px;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: white;
+    color: #34B5C9;
+  }
+
+  /* Set a specific color for each brand */
+
+/* Facebook 
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter 
+  .fa-instagram {
+    background: #55ACEE;
+    color: white;
+  }
+
+   /* Tiktok 
+   .fa-tiktok {
+    background: #55ACEE;
+    color: white;
+  }
+
+  */

@@ -1,0 +1,170 @@
+/*animation container code*/
+
+#container {
+    width: 800px;
+    height: 800px;
+    position: relative;
+    background: yellow;
+    z-index: 1;
+  }
+
+#container p {
+  margin: auto;
+  text-align: center;
+}
+
+/*arrow code*/
+
+#arrow-container {
+  position: absolute;
+  height: 75px;
+  width: 50px;
+  left: 370px;
+  top: 30px;
+}
+
+#arrow-container img {
+  max-width: 100%;
+  height: auto;
+  transform: rotate(90deg);
+  
+}
+
+/*circles code*/
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  
+}
+
+#big {
+  background: red;
+  width: 600px;
+  height: 600px;
+  z-index: 2;
+  top: 100px;
+  left: 100px;
+}
+
+#medium {
+  background: blue;
+  width: 400px;
+  height: 400px;
+  z-index: 3;
+  top: 200px;
+  left: 200px;
+}
+
+#small {
+  background: green;
+  width: 200px;
+  height: 200px;
+  z-index: 4;
+  top: 300px;
+  left: 300px;
+
+}
+
+
+/*text box code*/
+
+.wheel-text {
+  width: 100px;
+  height: 60px;
+  background-color: white;
+  position: absolute;
+}
+
+#small .wheel-text {
+  width: 75px;
+  height: 30px;
+}
+
+/*big text box code*/
+
+#big-text1 {
+  top: 20px;
+  left: 250px;
+  
+}
+
+#big-text2 {
+  top: 270px;
+  left: 500px;
+  transform: rotate(90deg);
+
+  
+}
+
+#big-text3 {
+  top: 520px;
+  left: 250px;
+  transform: rotate(180deg);
+  
+}
+
+#big-text4 {
+  top: 270px;
+  
+  transform: rotate(-90deg);
+  
+}
+
+/*medium circle text boxes*/
+
+#medium-text1 {
+  top: 20px;
+  left: 150px;
+  
+}
+
+#medium-text2 {
+  top: 170px;
+  left: 300px;
+  transform: rotate(90deg);
+  
+}
+
+#medium-text3 {
+  top: 320px;
+  left: 150px;
+  transform: rotate(180deg);
+  
+}
+
+#medium-text4 {
+  top: 170px;  
+  transform: rotate(-90deg);
+  
+}
+
+/*Small circle text boxes*/
+
+#small-text1 {
+  top: 20px;
+  left: 62.5px;
+  
+}
+
+#small-text2 {
+  top: 85px;
+  left: 125px;
+  transform: rotate(90deg);
+  
+}
+
+#small-text3 {
+  top: 150px;
+  left: 62.5px;
+  transform: rotate(180deg);
+  
+}
+
+#small-text4 {
+  top: 85px;
+  
+  transform: rotate(-90deg);
+  
+}
+
