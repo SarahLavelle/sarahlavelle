@@ -1,13 +1,85 @@
-.navbar {
-    background-color: #34B5C9;
+body {
+  color: #1F4B85;
 }
 
+.navbar {
+    /*background-color: #34B5C9;*/
+    background-color: white;
+    font-size: 2rem;
+}
+
+.nav-link {
+  color: #1F4B85;
+}
+
+.nav-link:hover {
+  /*color:  #F1D63E;
+  text-decoration: underline;*/
+  background-color: #1F4B85;
+  color: white;
+  border-radius: 10px;
+  transition: 0s;
+}
+
+.navbar-nav .nav-link.active {
+  color: #B74526;
+  text-decoration: underline;
+  
+}
+
+.navbar li {
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+}
+/*
+.logo-heading {
+  width: 100%;
+}*/
+
+
+/*
 .navbar-brand img {
     max-height: 100%;
 }
+*/
+
+.logo-heading {
+  min-width: 40%;
+}
+
+.logo-heading img {
+  width: 100%;
+}
+
 
 .navbar-default .navbar-nav li a {
     color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container {
+  /*max-width: 100%;*/
+  margin-top: 5%;
+}
+
+.text-box {
+  width: 60%;
+  margin-top: 5%;
+}
+
+.text-box p {
+  
+  font-size: 1.5rem;
+}
+
+.text-box h1 {
+  margin-bottom: 5%;
 }
 
 .fa-brands {
@@ -43,3 +115,55 @@
   }
 
   */
+
+  #footer {
+    background-color: #34B5C9;
+    margin-top: 5%;
+  }
+
+  #buy-now  {
+    color: #1F4B85;
+    background-color: white;
+    border-radius: 10px;
+    padding: 0.7%;
+    outline: 0.2rem solid;
+    font-size: 2rem;
+  }
+
+  #buy-now:hover {
+    color: white;
+    background-color: #1F4B85;
+  }
+
+  #buy-now:active {
+    color: #B74526;
+    background-color: white;
+      }
+
+  @media (min-width: 991.98px) {
+    #navbar-container {
+      flex-direction: column;
+    }
+
+  }
+
+  @media (max-width: 600px) {
+    .text-box {
+      width: 100%;
+      padding: 5%;
+
+    }
+
+    .image-container {
+      width: 100%;
+    }
+
+    .img-fluid {
+      width: 100%;
+    }
+
+    .image-container img {
+      width: 100%;
+    }
+
+  }
