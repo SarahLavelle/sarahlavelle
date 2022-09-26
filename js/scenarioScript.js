@@ -100,3 +100,76 @@ function randomDegreeGenerator() {
   }
 
   //console.log(randomDegreeGenerator());
+
+  function randomRotate2() {
+    let idBig = null;
+    let idMedium = null;
+    let idSmall = null;
+    const bigCircle = document.getElementById("big");
+    const mediumCircle = document.getElementById("medium");
+    const smallCircle = document.getElementById("small");
+    let rotationDegreeBig = 0;
+    let rotationDegreeMedium = 0;
+    let rotationDegreeSmall = 0;
+    let finalRotationDegreeBig = randomDegreeGenerator();
+    let finalRotationDegreeMedium = randomDegreeGenerator();
+    let finalRotationDegreeSmall = randomDegreeGenerator();
+    clearInterval(idBig);
+    clearInterval(idMedium);
+    clearInterval(idSmall);
+    id = setInterval(function(){
+      frame1();
+      frame2();
+      frame3();
+      
+    }, 5);
+    function frame1() {
+      if (rotationDegreeBig !== finalRotationDegreeBig) {
+        rotationDegreeBig++;
+        bigCircle.style.transform = `rotate(${rotationDegreeBig}deg)`;
+
+
+        //clearInterval(id);
+        
+      } /*else {
+        clearInterval(id);
+      }
+        /*rotationDegreeBig++;
+        
+        bigCircle.style.transform = `rotate(${rotationDegreeBig}deg)`
+        //mediumCircle.style.transform = `rotate(${-rotationDegree}deg)`
+        //smallCircle.style.transform = `rotate(${rotationDegree}deg)`*/
+      
+    }
+    
+    //idMedium = setInterval(frame2, 5);
+    function frame2() {
+      if (rotationDegreeMedium !== finalRotationDegreeMedium) {
+        rotationDegreeMedium++;
+        mediumCircle.style.transform = `rotate(${-rotationDegreeMedium}deg)`
+        //clearInterval(id);
+      } /*else {
+        rotationDegreeMedium++;
+        
+        //bigCircle.style.transform = `rotate(${rotationDegree}deg)`
+        mediumCircle.style.transform = `rotate(${-rotationDegreeMedium}deg)`
+        //smallCircle.style.transform = `rotate(${rotationDegree}deg)`
+      }*/
+    }
+    
+    //idSmall = setInterval(frame3, 5);
+    function frame3() {
+      if (rotationDegreeSmall !== finalRotationDegreeSmall) {
+        rotationDegreeSmall++;
+        smallCircle.style.transform = `rotate(${rotationDegreeSmall}deg)`
+        //clearInterval(id);
+      } /*else {
+        rotationDegreeSmall++;
+        
+        //bigCircle.style.transform = `rotate(${rotationDegree}deg)`
+        //mediumCircle.style.transform = `rotate(${-rotationDegree}deg)`
+        smallCircle.style.transform = `rotate(${rotationDegreeSmall}deg)`
+      }*/
+    }
+    
+  }

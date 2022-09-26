@@ -1,0 +1,19 @@
+.form-control {
+    border: 3px #34B5C9 solid;
+    border-radius: 0px;
+}
+
+form {
+    min-width: 60%;
+}
+
+.btn {
+    background-color: #1F4B85;
+    color: white;
+    border-radius: 0px;
+    margin-top: 10%;
+}
+
+label {
+    font-size: 1.4rem;
+}

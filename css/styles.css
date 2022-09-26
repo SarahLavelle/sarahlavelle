@@ -68,6 +68,15 @@ main {
   margin-top: 5%;
 }
 
+#book-cover {
+  justify-content: center;
+
+}
+
+#book-cover img {
+  outline: black solid 2px;
+}
+
 .text-box {
   width: 60%;
   margin-top: 5%;
@@ -119,14 +128,21 @@ main {
   #footer {
     background-color: #34B5C9;
     margin-top: 5%;
+    
+  }
+
+  #footer p {
+    color: white;
+    padding-left: 1%;
+    font-size: 2rem;
   }
 
   #buy-now  {
-    color: #1F4B85;
-    background-color: white;
-    border-radius: 10px;
+    color: white;
+    background-color: #EB8439;
+    /*border-radius: 10px;*/
     padding: 0.7%;
-    outline: 0.2rem solid;
+    /*outline: 0.2rem solid;*/
     font-size: 2rem;
   }
 
@@ -145,6 +161,15 @@ main {
       flex-direction: column;
     }
 
+    
+
+  }
+
+
+  @media (min-width: 750px) {
+    #book-cover img {
+      width: 60%;
+    }
   }
 
   @media (max-width: 600px) {
