@@ -1,10 +1,19 @@
 /*animation container code*/
 
+.sr-only {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+  }
+
 #container {
     width: 800px;
     height: 800px;
     position: relative;
-    background: yellow;
+    /*background: yellow;*/
     z-index: 1;
   }
 
@@ -39,7 +48,7 @@
 }
 
 #big {
-  background: red;
+  background: #CB4A27;
   width: 600px;
   height: 600px;
   z-index: 2;
@@ -48,7 +57,7 @@
 }
 
 #medium {
-  background: blue;
+  background: #F1D63E;
   width: 400px;
   height: 400px;
   z-index: 3;
@@ -57,7 +66,7 @@
 }
 
 #small {
-  background: green;
+  background: #2A6EA5;
   width: 200px;
   height: 200px;
   z-index: 4;
@@ -72,13 +81,24 @@
 .wheel-text {
   width: 100px;
   height: 60px;
-  background-color: white;
+  /*background-color: white;*/
   position: absolute;
 }
+
+#big .wheel-text, #small .wheel-text {
+  color: white;
+
+}
+
+#medium .wheel-text {
+  color: black;
+}
+ 
 
 #small .wheel-text {
   width: 75px;
   height: 30px;
+  
 }
 
 /*big text box code*/
@@ -143,27 +163,23 @@
 
 #small-text1 {
   top: 20px;
-  left: 62.5px;
-  
+  left: 62.5px;  
 }
 
 #small-text2 {
   top: 85px;
   left: 125px;
-  transform: rotate(90deg);
-  
+  transform: rotate(90deg);  
 }
 
 #small-text3 {
   top: 150px;
   left: 62.5px;
-  transform: rotate(180deg);
-  
+  transform: rotate(180deg);  
 }
 
 #small-text4 {
-  top: 85px;
-  
+  top: 85px;  
   transform: rotate(-90deg);
   
 }

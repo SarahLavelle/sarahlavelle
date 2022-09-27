@@ -43,6 +43,49 @@ function randomDegreeGenerator() {
   return 90 + multiple * factor;
 }
 
+function selectedTextFinder(degrees){
+  switch((degrees/90)%4) {
+    case 0:
+      return 1;
+      break;
+    case 1:
+      return 4;
+      break;
+    case 2:
+      return 3;
+      break;
+    case 3:
+      return 2;
+      break;
+  }
+
+}
+
+function selectedTextFinder2(degrees, direction){
+  switch((degrees/90)%4) {
+    case 0:
+      return 1;
+      break;
+    case 1:
+      if (direction === 'clockwise') {
+        return 4;
+      } else return 2;
+      
+      break;
+    case 2:
+      return 3;
+      break;
+    case 3:
+      if (direction === 'clockwise') {
+        return 2;
+      } else return 4;
+      return 2;
+      break;
+  }
+
+}
+
+console.log(selectedTextFinder(90));
 
   function randomRotate() {
     let idBig = null;
@@ -96,7 +139,18 @@ function randomDegreeGenerator() {
         smallCircle.style.transform = `rotate(${rotationDegreeSmall}deg)`
       }
     }
+    let bigFinalText = `${document.getElementById(`big-text${selectedTextFinder2(finalRotationDegreeBig, 'clockwise')}`).innerText}`;
+    let mediumFinalText = `${document.getElementById(`medium-text${selectedTextFinder2(finalRotationDegreeMedium, 'anti-clockwise')}`).innerText}`; 
+    let smallFinalText = `${document.getElementById(`small-text${selectedTextFinder2(finalRotationDegreeSmall, 'clockwise')}`).innerText}`; 
     
+    //document.getElementById('big-final').innerHTML = `${document.getElementById(`big-text${selectedTextFinder2(finalRotationDegreeBig, 'clockwise')}`).innerHTML}${finalRotationDegreeBig}`;
+    //document.getElementById('medium-final').innerHTML = `${document.getElementById(`medium-text${selectedTextFinder2(finalRotationDegreeMedium, 'anti-clockwise')}`).innerHTML}${finalRotationDegreeMedium}`; 
+    //document.getElementById('small-final').innerHTML = `${document.getElementById(`small-text${selectedTextFinder2(finalRotationDegreeSmall, 'clockwise')}`).innerHTML}${finalRotationDegreeSmall}`; 
+
+    document.getElementById('arrow-button').ariaLabel = bigFinalText + mediumFinalText + smallFinalText;
+
+
+
   }
 
   //console.log(randomDegreeGenerator());

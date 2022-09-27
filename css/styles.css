@@ -1,5 +1,26 @@
+
+
+
+@font-face {
+  font-family: 'Avenir Light';
+  src: url('../fonts/Avenir\ Light/Avenir\ light.eot');
+  src: url('../fonts/Avenir\ Light/Avenir Light.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Avenir\ Light/Avenir Light.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir-Light';
+  src: url('../fonts/Avenir\ Light/Avenir\ Light.ttf') format('truetype'),
+       url('../fonts/Avenir\ Light/Avenir-Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   color: #1F4B85;
+  font-family: 'Avenir Light';
 }
 
 .navbar {

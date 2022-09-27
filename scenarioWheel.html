@@ -6,10 +6,21 @@
     </head>
     <body>
         <h1>What's the situation?</h1>
-        <p><button onclick="randomRotate2()">Click me to randomly select a situation</button></p> 
+        <p><button onclick="randomRotate()" aria-label="next focusable element gives a read out of the selection made">Click me to randomly select a situation</button></p> 
+        <div class="sr-only" id="accessibility-readout"></div>
+        <!--
+        <div class="accessibility-summary">
+            <p id="big-final">big final</p>
+            <p id="medium-final">medium final</p>
+            <p id="small-final">small final</p>
+
+        </div>
+-->
         <div id="container">
             <div id="arrow-container">
+                <button id="arrow-button">
                 <img src="images/arrow-icon.png">
+                </button>
             </div>           
             <div class="circle" id="big">                
                 <div class="wheel-text" id="big-text1">
