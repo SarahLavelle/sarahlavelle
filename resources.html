@@ -19,6 +19,11 @@
     
     <!--styling-->
     <link href="css/styles.css" rel="stylesheet">
+    <link href="css/scenarioStyles.css" rel="stylesheet">
+    <!--Font Open Sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <!--Social media icons-->
     <script src="https://kit.fontawesome.com/4ad29889ee.js" crossorigin="anonymous"></script>
     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
@@ -33,7 +38,7 @@
       <div class="container-fluid" id="navbar-container">        
         
           <div class="logo-heading">
-            <img src="images/Sarah Lavelle logo rough.png" alt="logo image reads Sarah Lavelle">
+            <img src="images/Sarah Lavelle logo edit 2.png" alt="logo image reads Sarah Lavelle">
           </div> 
           
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -42,7 +47,7 @@
                 <a class="nav-link" href="./index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About me</a>
+                <a class="nav-link" href="./about-me.html">About me</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./books.html">Books</a>
@@ -98,6 +103,81 @@
 
   </div>
   -->
+  <h1>What's the situation?</h1>
+  <div class="row container-fluid">
+    <div class="col-md-3">
+      <p><button onclick="randomRotate()" aria-label="Click this button to get a randomly selected scenario">Click me to randomly select a situation</button></p> 
+    </div>  
+  
+    <div class="col-md-6">
+      <div id="container">
+        <!--
+        <div id="arrow-container">
+          <button id="arrow-button">
+          <img src="images/arrow-icon.png">
+          </button>
+        </div>       
+        -->    
+        <div class="circle" id="big">                
+          <div class="wheel-text" id="big-text1">
+            <p>Dropped phone, broke screen</p>
+          </div>
+          <div class="wheel-text" id="big-text2">
+            <p>Dropped drink, spilled everywhere</p>
+          </div>
+          <div class="wheel-text" id="big-text3">
+            <p>Forgot reading book</p>
+          </div>
+          <div class="wheel-text" id="big-text4">
+            <p>Kicked football over a fence</p>
+          </div>        
+        </div>
+    
+        <div class="circle" id="medium">                
+          <div class="wheel-text" id="medium-text1">
+            <p>Classmates</p>
+          </div>
+          <div class="wheel-text" id="medium-text2">
+            <p>Family</p>
+          </div>
+          <div class="wheel-text" id="medium-text3">
+            <p>Best friends</p>
+          </div>
+          <div class="wheel-text" id="medium-text4">
+            <p>Passersby</p>
+          </div>        
+        </div>
+    
+        <div class="circle" id="small">
+          <div class="wheel-text" id="small-text1">
+            <p>Park</p>
+          </div>
+          <div class="wheel-text" id="small-text2">
+            <p>Cinema</p>
+          </div>
+          <div class="wheel-text" id="small-text3">
+            <p>Home</p>
+          </div>
+          <div class="wheel-text" id="small-text4">
+            <p>School</p>
+          </div>        
+        </div>    
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="accessibility-summary" aria-label="a few seconds after clicking the selection button, a readout of your selection will appear here">
+        <p id="final-selection" style="display:inline-block;">Your selection will appear here after you click the button</p>
+          <!--<p id="big-final">big final</p>
+          <p id="medium-final">medium final</p>
+          <p id="small-final">small final</p>-->
+      </div>
+    </div>
+  </div>
+
+
+
+<script src="./js/scenarioScript.js"></script>
 </main>
 
 

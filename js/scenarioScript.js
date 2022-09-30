@@ -88,6 +88,7 @@ function selectedTextFinder2(degrees, direction){
 console.log(selectedTextFinder(90));
 
   function randomRotate() {
+    document.getElementById('final-selection').innerHTML = 'Please wait for your random selection...';
     let idBig = null;
     let idMedium = null;
     let idSmall = null;
@@ -143,13 +144,22 @@ console.log(selectedTextFinder(90));
     let mediumFinalText = `${document.getElementById(`medium-text${selectedTextFinder2(finalRotationDegreeMedium, 'anti-clockwise')}`).innerText}`; 
     let smallFinalText = `${document.getElementById(`small-text${selectedTextFinder2(finalRotationDegreeSmall, 'clockwise')}`).innerText}`; 
     
-    //document.getElementById('big-final').innerHTML = `${document.getElementById(`big-text${selectedTextFinder2(finalRotationDegreeBig, 'clockwise')}`).innerHTML}${finalRotationDegreeBig}`;
-    //document.getElementById('medium-final').innerHTML = `${document.getElementById(`medium-text${selectedTextFinder2(finalRotationDegreeMedium, 'anti-clockwise')}`).innerHTML}${finalRotationDegreeMedium}`; 
-    //document.getElementById('small-final').innerHTML = `${document.getElementById(`small-text${selectedTextFinder2(finalRotationDegreeSmall, 'clockwise')}`).innerHTML}${finalRotationDegreeSmall}`; 
+    
 
-    document.getElementById('arrow-button').ariaLabel = bigFinalText + mediumFinalText + smallFinalText;
+    //document.getElementById('arrow-button').ariaLabel = bigFinalText + mediumFinalText + smallFinalText;
 
+    function largestDegreeToTime(){
+      let largestDegree = Math.max(finalRotationDegreeBig, finalRotationDegreeMedium, finalRotationDegreeSmall);
+      let timeTaken = largestDegree * 5;
+      let withDelay = timeTaken + 1000;
+      return withDelay;
 
+    }
+    setTimeout(function(){
+      document.getElementById('final-selection').innerHTML = `${bigFinalText}${mediumFinalText}${smallFinalText}`;
+      //document.getElementById('medium-final').innerHTML = mediumFinalText; 
+      //document.getElementById('small-final').innerHTML = smallFinalText; 
+    }, largestDegreeToTime());
 
   }
 
