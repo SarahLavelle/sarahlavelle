@@ -72,23 +72,32 @@
 <main>
   
   <div class="text-box">
-    <h1 class="text-center">Heading</h1>
+    <h1 class="text-center">Contact me!</h1>
     <p class="text-center">I’d love to hear from you! Please use the form below to get in touch and I’ll get back to you soon.</p>
+  </div>
+  <div class="image-container d-flex" id="happy-piff-container">
+    <img src="images/Happy-Piff-colour.gif" class=".img-fluid" id="happy-piff-image"/>
+
   </div>
   <form action="/thanks.html" name="Contact-form" method="POST" data-netlify="true" data-netlify-recaptcha="true" content-Type="application/x-www-form-urlencoded">
     <div class="form-group mb-3">
-      <label for="name">Name</label>
-      <input type="name" class="form-control" id="name" placeholder="Name" name="name">
+      <label for="name">Name *</label>
+      <input type="name" class="form-control" id="name" placeholder="Name" name="name" required>
     </div>
     <div class="form-group mb-3">
-      <label for="email">Email address</label>
-      <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" name="email">
-      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      <label for="email">Email address *</label>
+      <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" name="email" required>
+      <small id="emailHelp" class="form-text text-muted">We'll never share your contact details with anyone else.</small>
+    </div>
+    <div class="form-group mb-3">
+      <label for="phone">Phone number</label>
+      <input type="number" class="form-control" id="phone" aria-describedby="emailHelp" placeholder="Enter phone number (optional)" name="phone">
+      <small id="phoneHelp" class="form-text text-muted">We'll never share your contact details with anyone else.</small>
     </div>
     
     <div class="form-group mb-3">
-      <label for="inquiry">Message</label>
-      <textarea class="form-control" id="inquiry" rows="6" name="inquiry" placeholder="Type your message here"></textarea>
+      <label for="inquiry">Message *</label>
+      <textarea class="form-control" id="inquiry" rows="6" name="inquiry" placeholder="Type your message here" required></textarea>
     </div>
     <div data-netlify-recaptcha="true"></div>
     <div class="text-center">

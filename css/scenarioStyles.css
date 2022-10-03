@@ -37,22 +37,23 @@ p {
     /*background: yellow;*/
     z-index: 1;
   }
-/*
+
   #arrow-container {
     position: absolute;
-    height: 75px;
-    width: 50px;
-    left: 370px;
-    top: 30px;
+    height: 10%;
+    width: 7.5%;
+    left: 46.5%;
+    top: 47%;
+    z-index: 5;
   }
   
   #arrow-container img {
     max-width: 100%;
     height: auto;
-    transform: rotate(90deg);
+    transform: rotate(-90deg);
     
   }
-  */
+  
   /*circles code*/
   
   .circle {
@@ -64,7 +65,7 @@ p {
 /*experimental up-sizings for circles*/
 
 #big {
-  background: #CB4A27;
+  background: #76C2C1;
   width: 90%;
   height: 90%;
   z-index: 2;
@@ -82,7 +83,7 @@ p {
 }
 
 #small {
-  background: #2A6EA5;
+  background: #B33D69;
   width: 30%;
   height: 30%;
   z-index: 4;
@@ -146,11 +147,11 @@ p {
   height: 15%;  
 }
 
-#big .wheel-text, #small .wheel-text {
+ #small .wheel-text {
   color: white;
 }
 
-#medium .wheel-text {
+#big .wheel-text, #medium .wheel-text {
   color: black;
 }
 
@@ -196,7 +197,7 @@ p {
 
 #medium-text1 {
   top: 5%;
-  left: 37.5%;
+  left: 35%;
   
 }
 

@@ -91,20 +91,53 @@ main {
 .image-container {
   /*max-width: 100%;*/
   margin-top: 5%;
+  justify-content: center;
 }
 
 #portrait {
-  width: 60%;
+  /*width: 60%;*/
+}
+
+#portrait-bio-container {
+  justify-content: center;
 }
 
 #book-cover {
   justify-content: center;
+  max-width: 99%;
 
 }
 
 #book-cover img {
-  outline: black solid 2px;
+  outline: #2A6EA5 solid 2px;
+ /* width: 40%;*/
 }
+/*
+#book-cover .img-fluid {
+  height: 60vh;
+}
+*/
+
+#about-me-heading-mobile {
+  display: none;
+}
+
+#portrait-bio-splash {
+  width: 70%;
+}
+
+
+
+#portrait-bio-splash .text-box p {
+  padding: 0% 2%;
+  text-align: center;
+}
+
+#portrait-bio-text {
+  flex-direction: column;
+  justify-content: center;
+}
+
 
 .text-box {
   width: 60%;
@@ -119,6 +152,37 @@ main {
 .text-box h1 {
   margin-bottom: 5%;
 }
+
+/*resources*/
+
+#colouring-in-sheets-container {
+  /*height: 50vh;*/
+}
+
+.colouring-in-tall-thumbnail-container {
+  
+
+}
+
+.colouring-in-thumbnail-container-trio {
+  width: 55%;
+
+}
+
+#trio-thumbnails-nested-container {
+  flex-direction: column;
+}
+
+/*Contact page*/
+
+#happy-piff-container {
+  justify-content: center;
+}
+
+#happy-piff-image {
+  width: 50%;
+}
+
 
 .fa-brands {
     padding: 10px 7px 7px;
@@ -211,16 +275,49 @@ main {
   }
 
 @media (max-width: 768px) {
+  
+  /*about me page portrait optimisation*/
   #portrait {
     width: 100%;
   }
+
+  #portrait-bio-splash .text-box {
+    width: 100%;
+    
+  }
+
+  #about-me-heading-mobile {
+    display: block;
+  }
+
+  #about-me-heading-desktop {
+    display: none;
+  }
+  /*resources page*/
+  .colouring-in-thumbnail-container-trio {
+    width: 100%;
+  }
+
+  /*Contact page*/
+
+  #happy-piff-image {
+    width: 100%;
+  }
+  
+
 }
 
 
+
   @media (min-width: 750px) {
+    
     #book-cover img {
+      width: 40%;
+    }
+    #katisha, #katisha-coco-and-co {
       width: 60%;
     }
+
   }
 
   @media (max-width: 600px) {
