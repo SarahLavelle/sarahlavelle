@@ -645,7 +645,7 @@ p {
   /*optimisation of scenario selection wheel for mobile devices*/  
 
   #container p {
-    font-size: 0.8rem;
+    font-size: 1rem;
     
   }
 }
