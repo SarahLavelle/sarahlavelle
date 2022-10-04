@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sarah Lavelle</title>
+    <title>Learning resources provided by children's book author Sarah Lavelle</title>
+    <meta name="description" content="A set of resources including colouring in sheets of illustrations from Sarah's book, as well as a random secenario generator to help children develop empathy.">
     
     <!--Favicon icon-->
 
@@ -38,7 +39,7 @@
       <div class="container-fluid" id="navbar-container">        
         
           <div class="logo-heading">
-            <img src="images/Sarah Lavelle logo edit 2.png" alt="logo image reads Sarah Lavelle">
+            <img src="images/Sarah Lavelle logo edit 2.png" alt="logo image reads Sarah Lavelle" />
           </div> 
           
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -71,7 +72,7 @@
 
 <main>
     <div class="image-container d-flex">
-        <img src="images/katisha-Coco-and-co.gif" class="img-fluid" id="katisha-coco-and-co"/>
+        <img src="images/katisha-Coco-and-co.gif" class="img-fluid" id="katisha-coco-and-co" alt="an illustration shows a clown fish, a coy carpe fish, an octopus, a sea horse and a lobster all smiling" />
     
       </div>
       <div class="text-box">
@@ -81,53 +82,28 @@
 
       <div class="row container-fluid" id="colouring-in-sheets-container">
         <div class="col-md-6 colouring-in-tall-thumbnail-container">
-          <a href="./resources/Piff on ladder.pdf" attributes-list download><img class="img-fluid" src="images/colouring in/piff on a ladder.png" /></a>
+          <a href="./resources/Piff on ladder.pdf" attributes-list download aria-label="click to download a PDF with an image for colouring in"><img class="img-fluid" src="images/colouring in/piff on a ladder.png" alt="thumbnail shows Piff the puffer fish at the top of a ladder"/></a>
         </div>
         <div class="col-md-6 d-flex" id="trio-thumbnails-nested-container">
           <div class="colouring-in-thumbnail-container-trio">
-            <a href="./resources/Piff puffing up.pdf" attributes-list download><img class="img-fluid" src="images/colouring in/piff puffing up.png" /></a>
+            <a href="./resources/Piff puffing up.pdf" attributes-list download aria-label="click to download a PDF with an image for colouring in"><img class="img-fluid" src="images/colouring in/piff puffing up.png" alt="thumbnail shows Piff the puffer fish puffing up"/></a>
           </div>
           <div class="colouring-in-thumbnail-container-trio">
-            <a href="./resources/Piff clams up.pdf" attributes-list download><img class="img-fluid" src="images/colouring in/piff clams up.png" /></a>       
+            <a href="./resources/Piff clams up.pdf" attributes-list download aria-label="click to download a PDF with an image for colouring in"><img class="img-fluid" src="images/colouring in/piff clams up.png" alt="thumbnail shows Piff the puffer fish hidden in a clam shell"/></a>       
           </div>
           <div class="colouring-in-thumbnail-container-trio">
-            <a href="./resources/Happy Piff.pdf" attributes-list download><img class="img-fluid" src="images/colouring in/happy piff.png" /></a>
+            <a href="./resources/Happy Piff.pdf" attributes-list download aria-label="click to download a PDF with an image for colouring in"><img class="img-fluid" src="images/colouring in/happy piff.png" alt="thumbnail shows Piff the puffer fish looking happy"/></a>
           </div>
 
         </div>
       </div>
 
 
-<!--
-    <div class="row container-fluid">
-        <div class="col-md-4">
-            <img class="img-fluid" src="images/rough colouring in/expanding piff.jpg" />
-        </div>
-        <div class="col-md-4">
-            <img class="img-fluid" src="images/rough colouring in/ladder.jpg" />
-        </div>
-        <div class="col-md-4">
-            <img class="img-fluid" src="images/rough colouring in/shell.jpg" />
-        </div>
-    </div>
-    
-  <div class="image-container">
-    <img src="images/sarah lavelle portrait.jpg" class=".img-fluid" />
 
-  </div>
-  <div class="text-box">
-    <h1 class="text-center">Heading</h1>
-    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget egestas erat, at ultrices risus. Nullam sed mi lectus. Duis leo nibh, semper pulvinar porta in, auctor non justo. Nulla sit amet eros erat. Ut ornare justo ut lobortis cursus. Vivamus sapien diam, sollicitudin et est vitae, tempor viverra urna. Etiam iaculis sit amet augue eget convallis. Pellentesque porta tempor porta.</p>
-  </div>
-  <div class="image-container">
-    <img src="images/sarah lavelle portrait.jpg" class=".img-fluid" />
-
-  </div>
-  -->
   <h1>What's the situation?</h1>
   <div class="row container-fluid">
     <div class="col-md-3">
-      <p><button onclick="randomRotate()" aria-label="Click this button to get a randomly selected scenario">Click me to randomly select a situation</button></p> 
+      <p><button onclick="randomRotate()" aria-label="Click this button to get a randomly selected scenario then press tab for a summary">Click me to randomly select a situation</button></p> 
     </div>  
   
     <div class="col-md-6">
@@ -187,12 +163,13 @@
     </div>
 
     <div class="col-md-3">
-      <div class="accessibility-summary" aria-label="a few seconds after clicking the selection button, a readout of your selection will appear here">
-        <p id="final-selection" style="display:inline-block;">Your selection will appear here after you click the button</p>
-          <!--<p id="big-final">big final</p>
-          <p id="medium-final">medium final</p>
-          <p id="small-final">small final</p>-->
-      </div>
+      <details class="accessibility-summary">
+        <summary aria-label="summary of randomly selected scenario">Click for a read out of the random selection</summary>
+        <p id="final-selection">
+          Click the button to get a randomly selected scenario.
+        </p>
+      </details>
+      
     </div>
   </div>
 
@@ -204,15 +181,11 @@
 
     <nav class="navbar" id="footer">
       <div class="container-fluid">
-        <p class="navbar-brand text-wrap">&copy; Sarah Lavelle 2022</p>
-        <!--<a id="buy-now" target="_blank" class="navbar-brand text-wrap" href="https://www.nowchemistry.com"><em>Piff in the Puffle</em> available here</a>
-        <div>
-          <button><em>Piff in the Puffle</em> available here</button>
-        </div>-->
+        <p class="navbar-brand text-wrap">&copy; Sarah Lavelle 2022</p>        
         <div class="navbar-text">
-          <a class="nav-item" target="_blank" href="https://www.facebook.com/sarah.lavelle.10"><i class="fa-brands fa-facebook-f"></i></a>
-          <a class="nav-item" target="_blank" href="https://www.instagram.com/adhdmumandwriter/"><i class="fa-brands fa-instagram"></i></a>
-          <a class="nav-item" target="_blank" href="https://www.tiktok.com/@adhdmum_writer"><i class="fa-brands fa-tiktok"></i></a>
+          <a class="nav-item" aria-label="link to Sarah Lavelle's Facebook profile" target="_blank" href="https://www.facebook.com/sarah.lavelle.10"><i class="fa-brands fa-facebook-f"></i></a>
+          <a class="nav-item" aria-label="link to Sarah Lavelle's Instagram profile" target="_blank" href="https://www.instagram.com/adhdmumandwriter/"><i class="fa-brands fa-instagram"></i></a>
+          <a class="nav-item" aria-label="link to Sarah Lavelle's Tiktok profile" target="_blank" href="https://www.tiktok.com/@adhdmum_writer"><i class="fa-brands fa-tiktok"></i></a>
         </div>
       </div>
     </nav>

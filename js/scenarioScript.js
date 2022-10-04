@@ -1,49 +1,8 @@
-function myMove() {
-    let id = null;
-    const elem = document.getElementById("animate");
-    let pos = 0;
-    clearInterval(id);
-    id = setInterval(frame, 5);
-    function frame() {
-      if (pos == 350) {
-        clearInterval(id);
-      } else {
-        pos++;
-        elem.style.top = pos + 'px';
-        elem.style.left = pos + 'px';
-        elem.style.transform = `rotate(${pos}deg)`
-      }
-    }
-  }
-
-  function myRotate() {
-    let id = null;
-    const bigCircle = document.getElementById("big");
-    const mediumCircle = document.getElementById("medium");
-    const smallCircle = document.getElementById("small");
-    let rotationDegree = 0;
-    clearInterval(id);
-    id = setInterval(frame, 5);
-    function frame() {
-      if (rotationDegree == 60) {
-        clearInterval(id);
-      } else {
-        rotationDegree++;
-        
-        bigCircle.style.transform = `rotate(${rotationDegree}deg)`
-        mediumCircle.style.transform = `rotate(${-rotationDegree}deg)`
-        smallCircle.style.transform = `rotate(${rotationDegree}deg)`
-      }
-    }
-  }
-
 function randomDegreeGenerator() {
   let multiple = Math.floor(Math.random() * 10);
   let factor = 90;
   return 90 + multiple * factor;
 }
-
-
 
 function selectedTextFinder(degrees, direction){
   switch((degrees/90)%4) {
@@ -53,8 +12,7 @@ function selectedTextFinder(degrees, direction){
     case 1:
       if (direction === 'clockwise') {
         return 4;
-      } else return 2;
-      
+      } else return 2;      
       break;
     case 2:
       return 3;
@@ -66,7 +24,6 @@ function selectedTextFinder(degrees, direction){
       return 2;
       break;
   }
-
 }
 
 function resetOpacity() {
@@ -74,11 +31,7 @@ function resetOpacity() {
     for (i = 0; i < wheelText.length; i++) {
       wheelText[i].style.opacity = 1;
     }
-
 }
-
-
-
 
   function randomRotate() {
     document.getElementById('final-selection').innerHTML = 'Please wait for your random selection...';
@@ -101,11 +54,8 @@ function resetOpacity() {
       if (rotationDegreeBig == finalRotationDegreeBig) {
         clearInterval(idBig);
       } else {
-        rotationDegreeBig++;
-        
-        bigCircle.style.transform = `rotate(${rotationDegreeBig}deg)`
-        //mediumCircle.style.transform = `rotate(${-rotationDegree}deg)`
-        //smallCircle.style.transform = `rotate(${rotationDegree}deg)`
+        rotationDegreeBig++;        
+        bigCircle.style.transform = `rotate(${rotationDegreeBig}deg)`;        
       }
     }
     clearInterval(idMedium);
@@ -114,11 +64,8 @@ function resetOpacity() {
       if (rotationDegreeMedium == finalRotationDegreeMedium) {
         clearInterval(idMedium);
       } else {
-        rotationDegreeMedium++;
-        
-        //bigCircle.style.transform = `rotate(${rotationDegree}deg)`
-        mediumCircle.style.transform = `rotate(${-rotationDegreeMedium}deg)`
-        //smallCircle.style.transform = `rotate(${rotationDegree}deg)`
+        rotationDegreeMedium++;                
+        mediumCircle.style.transform = `rotate(${-rotationDegreeMedium}deg)`;        
       }
     }
     clearInterval(idSmall);
@@ -128,10 +75,7 @@ function resetOpacity() {
         clearInterval(idSmall);
       } else {
         rotationDegreeSmall++;
-        
-        //bigCircle.style.transform = `rotate(${rotationDegree}deg)`
-        //mediumCircle.style.transform = `rotate(${-rotationDegree}deg)`
-        smallCircle.style.transform = `rotate(${rotationDegreeSmall}deg)`
+        smallCircle.style.transform = `rotate(${rotationDegreeSmall}deg)`;
       }
     }
     
@@ -139,16 +83,11 @@ function resetOpacity() {
     let mediumFinalText = `${document.getElementById(`medium-text${selectedTextFinder(finalRotationDegreeMedium, 'anti-clockwise')}`).innerText}`; 
     let smallFinalText = `${document.getElementById(`small-text${selectedTextFinder(finalRotationDegreeSmall, 'clockwise')}`).innerText}`; 
     
-    
-
-    //document.getElementById('arrow-button').ariaLabel = bigFinalText + mediumFinalText + smallFinalText;
-
     function largestDegreeToTime(){
       let largestDegree = Math.max(finalRotationDegreeBig, finalRotationDegreeMedium, finalRotationDegreeSmall);
       let timeTaken = largestDegree * 5;
       let withDelay = timeTaken + 1000;
-      return withDelay;
-    
+      return withDelay;    
     }
 
     setTimeout(function(){
@@ -159,9 +98,7 @@ function resetOpacity() {
     document.getElementById(`big-text${selectedTextFinder(finalRotationDegreeBig, 'clockwise')}`).style.opacity = 1;
     document.getElementById(`medium-text${selectedTextFinder(finalRotationDegreeMedium, 'anti-clockwise')}`).style.opacity = 1;
     document.getElementById(`small-text${selectedTextFinder(finalRotationDegreeSmall, 'clockwise')}`).style.opacity = 1;
-      document.getElementById('final-selection').innerHTML = `${bigFinalText}${mediumFinalText}${smallFinalText}`;
-      //document.getElementById('medium-final').innerHTML = mediumFinalText; 
-      //document.getElementById('small-final').innerHTML = smallFinalText; 
+      document.getElementById('final-selection').innerHTML = `${bigFinalText}${mediumFinalText}${smallFinalText}`;      
     }, largestDegreeToTime());
 
   }

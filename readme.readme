@@ -1,24 +1,19 @@
-template
-
-header (sticky)
-
-picture
-
-heading
-
-text
-
-picture
-
-footer (not sticky, has buy now button)
-
-Links
-
-Favicon generator: https://realfavicongenerator.net/favicon_result?file_id=p1gdfhpieg1gev11d2abq1e4o19lf6#.YyrIBnbMK3A 
-
 notes:
-scenario wheel
 
-white writing on blue #2A6EA5 background, contrast >5
-black writing on yellow #F1D63E background, contrast > 14
-white writing on red #CB4A27 background, contrast > 4.5
+Avenir light font by fontsgeeks, http://fontsgeek.com/fonts/avenir-light?ref=readme
+
+colours
+
+(from left to right, RGB codes [and some hex codes] for the colours that appear in the "Sarah Lavelle" logo)
+
+Yellow, 241, 214, 62, #F1D63E
+dark blue, 42, 110, 165, #2A6EA5
+red, 203, 74, 39, #CB4A27
+dark green, 12, 143, 133
+pinky red, 183, 77, 107
+light green, 65, 186, 140
+orange 237, 131, 57
+cyan 118, 194, 193 #76C2C1
+purple 122, 72, 138
+other yellow 234, 223, 46
+marooney, 179, 61, 105 #B33D69

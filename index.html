@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sarah Lavelle</title>
+    <title>Sarah Lavelle children's book author home page</title>
+    <meta name="description" content="Sarah Lavelle is an author whose debut children's book Piff in a Puffle is available now."> 
     
     <!--Favicon icon-->
 
@@ -26,6 +27,21 @@
     <!--Social media icons-->
     <script src="https://kit.fontawesome.com/4ad29889ee.js" crossorigin="anonymous"></script>
     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+
+    <script type="application/ld+json">
+      {
+      "@context": "http://schema.org/",
+      "@type": "Book",
+      "name": "Piff in a Puffle",
+      "image": "https://www.sarahlavelle.co.uk/images/front-cover.gif",
+      "author": {
+        "@type": "Person",
+        "name": "Sarah Lavelle"
+      },
+      "datePublished": "2022-10-04",
+      "description": "Piff strives to find the perfect part for her. If only she could stop puffling and win the approval of Madame Katisha, the ringmaster. But just as she is about to give up, she discovers it's her puffle that makes the other fish laugh."
+    }
+  </script>
 
   </head>
   <body>
@@ -70,18 +86,18 @@
 
 <main>
   <div class="image-container d-flex text-center" id="book-cover" >
-    <a href="./books.html"><img src="images/front-cover.gif" class="img-fluid" /></a>
+    <a href="./books.html"><img src="images/front-cover.gif" class="img-fluid" alt="front cover of Sarah Lavelle's debut children's book Piff in a Puffle, featuring a smiling cartoon puffer fish under a circus marquee sign" /></a>
 
   </div>
   
   <div class="text-box">
-    <h1 class="text-center">What the experts say about <em>Piff in a Puffle</em>
+    <h1 class="text-center">Praise for Sarah Lavelle's debut children's book <em>Piff in a Puffle</em>
       </h1>
     <p class="text-center">'A powerful and inspiring message that can only help to demystify and normalise neurodiversity.' Dr Shahab Tamuri, Consultant Psychiatrist, Richmond ADHD Services
       </p>
   </div>
   <div class="image-container">
-    <img src="images/sarah lavelle portrait.jpg" class=".img-fluid" />
+    <img src="images/sarah lavelle portrait.jpg" class="img-fluid" alt="a portrait of the author Sarah Lavelle"/>
 
   </div>
   <div class="text-box">
@@ -95,15 +111,11 @@
 
     <nav class="navbar" id="footer">
       <div class="container-fluid">
-        <p class="navbar-brand text-wrap">&copy; Sarah Lavelle 2022</p>
-        <!--<a id="buy-now" target="_blank" class="navbar-brand text-wrap" href="https://www.nowchemistry.com"><em>Piff in the Puffle</em> available here</a>
-        <div>
-          <button><em>Piff in the Puffle</em> available here</button>
-        </div>-->
+        <p class="navbar-brand text-wrap">&copy; Sarah Lavelle 2022</p>        
         <div class="navbar-text">
-          <a class="nav-item" target="_blank" href="https://www.facebook.com/sarah.lavelle.10"><i class="fa-brands fa-facebook-f"></i></a>
-          <a class="nav-item" target="_blank" href="https://www.instagram.com/adhdmumandwriter/"><i class="fa-brands fa-instagram"></i></a>
-          <a class="nav-item" target="_blank" href="https://www.tiktok.com/@adhdmum_writer"><i class="fa-brands fa-tiktok"></i></a>
+          <a class="nav-item" aria-label="link to Sarah Lavelle's Facebook profile" target="_blank" href="https://www.facebook.com/sarah.lavelle.10"><i class="fa-brands fa-facebook-f"></i></a>
+          <a class="nav-item" aria-label="link to Sarah Lavelle's Instagram profile" target="_blank" href="https://www.instagram.com/adhdmumandwriter/"><i class="fa-brands fa-instagram"></i></a>
+          <a class="nav-item" aria-label="link to Sarah Lavelle's Tiktok profile" target="_blank" href="https://www.tiktok.com/@adhdmum_writer"><i class="fa-brands fa-tiktok"></i></a>
         </div>
       </div>
     </nav>
