@@ -91,14 +91,14 @@
     eventLabel: event.target.href,
     transport: 'beacon'
   });
-}*/
+}
 
   var captureOutboundLink = function(url) {
      ga('send', 'event', 'outbound', 'click', url, {
        'transport': 'beacon',
        'hitCallback': function(){document.location = url;}
      });
-  }
+  }*/
   </script>
 
   </head>
