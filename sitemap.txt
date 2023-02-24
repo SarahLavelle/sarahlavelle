@@ -1,9 +1,10 @@
 https://www.sarahlavelle.co.uk
-https://www.sarahlavelle.co.uk/about-me
-https://www.sarahlavelle.co.uk/books
-https://www.sarahlavelle.co.uk/resources
-https://www.sarahlavelle.co.uk/contact
-https://www.sarahlavelle.co.uk/events
+https://www.sarahlavelle.co.uk/about-me.html
+https://www.sarahlavelle.co.uk/books.html
+https://www.sarahlavelle.co.uk/resources.html
+https://www.sarahlavelle.co.uk/contact.html
+https://www.sarahlavelle.co.uk/events.html
+https://www.sarahlavelle.co.uk/privacy.html
 
 
 

@@ -123,6 +123,20 @@ main {
   margin-bottom: 5%;
 }
 
+/*Privacy page*/
+
+#privacy {
+  width: 100%;
+}
+
+#privacy p {
+  margin-left: 0% !important;
+}
+
+#address p {
+  margin-left: 0%;
+}
+
 /*resources*/
 /*
 .colouring-in-thumbnail-container-trio {
@@ -144,6 +158,8 @@ main {
   width: 50%;
 }
 
+/*footer*/
+
 .fa-brands {
     padding: 10px 7px 7px;
     font-size: 30px;
@@ -163,11 +179,14 @@ main {
     
   }
 
-  #footer p {
-    color: white;
+  #footer p, .footer-nav-link {
+    color: white !important;
     padding-left: 1%;
     font-size: 2rem;
+    text-decoration: none !important;
   }
+
+  
 
   #buy-now  {
     color: white;
@@ -273,3 +292,9 @@ main {
     }
 
   }
+
+  @media screen and (min-width: 250px) {
+#privacy {
+    width: 80%;
+}
+}
