@@ -87,7 +87,7 @@ main {
 }
 
 #book-cover img {
-  outline: #2A6EA5 solid 2px; 
+  outline: lightblue solid 4px; 
 }
 
 
@@ -157,6 +157,22 @@ main {
 #happy-piff-image {
   width: 50%;
 }
+
+/*resources page*/
+  /*.colouring-in-thumbnail-container-trio {
+    width: 100%;
+  }*/
+
+  .colouring-in-sheet-container {
+    outline: lightblue solid 3px !important;
+  }
+
+  #colouring-in-sheets-container {
+   /* width: 80% !important;*/
+
+  }
+
+  
 
 /*footer*/
 
@@ -245,10 +261,7 @@ main {
   #about-me-heading-desktop {
     display: none;
   }
-  /*resources page*/
-  .colouring-in-thumbnail-container-trio {
-    width: 100%;
-  }
+  
 
   /*Contact page*/
 
@@ -289,6 +302,11 @@ main {
 
     .image-container img {
       width: 100%;
+    }
+
+    #colouring-in-sheets-container {
+      width: 100%;
+  
     }
 
   }
