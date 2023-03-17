@@ -168,11 +168,18 @@ main {
   }
 
   #colouring-in-sheets-container {
-   width: 60% !important;
+   width: 90% !important;
 
   }
 
-  
+  #colouring-in-sheets-container .col-md-2 {
+    /*width: 22%;*/
+  }
+
+  #colouring-in-sheets-intro-text {
+    width: 90%;
+
+  }
 
 /*footer*/
 
@@ -272,7 +279,11 @@ main {
 
 }
 
-
+@media (min-width: 768px){
+  #colouring-in-sheets-container .col-md-2 {
+   
+    width: 22%;
+}}
 
   @media (min-width: 750px) {
     
